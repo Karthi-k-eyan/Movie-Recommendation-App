@@ -1,0 +1,47 @@
+<!--detail.html-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Details</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="./detail.js"></script>
+  <link rel="stylesheet" href="./styleDetailsPg.css">
+</head>
+<body>
+  <header>
+    <h1 id="appTitle">Movie Details</h1>
+  </header>
+  <div id="movieDetailsContainer">
+    <div id="movieTopSection">
+      <img id="moviePoster" src="" alt="Movie Poster">
+      <div id="movieInfo">
+        <h2 id="movieTitle"></h2>
+        <p id="movieOverview"></p>
+        <p id="movieScore">User Score: <span id="score"></span></p>
+        <p id="movieReleaseDate">Release Date: <span id="releaseDate"></span></p>
+      </div>
+    </div>
+    <div id="movieBottomSection">
+      <div id="castCarousel" class="carousel">
+        <h3>Top Billed Cast</h3>
+        <div class="carousel-inner" id="castList">
+          <!-- Cast members will be appended here -->
+        </div>
+      </div>
+      <div id="movieAdditionalInfo">
+        <h3>Additional Info</h3>
+        <p>Original Language: <span id="originalLanguage"></span></p>
+        <p>Budget: $<span id="budget"></span></p>
+        <p>Revenue: $<span id="revenue"></span></p>
+      </div>
+    </div>
+    <div id="movieReviews">
+      <h3>Reviews</h3>
+      <div id="reviewsList">
+        <!-- Reviews will be appended here -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>

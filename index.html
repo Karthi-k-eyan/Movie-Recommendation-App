@@ -1,0 +1,55 @@
+<!--index.html-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Movie Recommendation</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 id="appTitle">Movie Recommendation</h1>
+    </header>
+    <form id="genreForm">
+      <label>Choose a genre:</label>
+      <select name="genres" id="genres">
+      </select>
+    </form>
+    <button id="playBtn">Search</button>
+    <div id="movieList" hidden>
+      <!-- Movies will be appended here -->
+    </div>
+    <div id="likeOrDislikeBtns" hidden>
+      <button id="likeBtn">Next</button>
+    </div>
+    
+    <!-- New section for detailed movie information -->
+    <div id="movieDetails" hidden>
+      <div id="movieHeader">
+        <img id="detailPoster" src="" alt="Movie Poster">
+        <div id="detailInfo">
+          <h2 id="detailTitle"></h2>
+          <p id="detailScore"></p>
+          <p id="detailOverview"></p>
+        </div>
+      </div>
+      <div id="movieCast">
+        <h3>Cast</h3>
+        <div id="castCarousel">
+          <!-- Cast will be appended here -->
+        </div>
+      </div>
+      <div id="movieFacts">
+        <p id="detailLanguage"></p>
+        <p id="detailBudget"></p>
+        <p id="detailRevenue"></p>
+      </div>
+      <div id="movieReviews">
+        <h3>Reviews</h3>
+        <div id="reviewList">
+          <!-- Reviews will be appended here -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

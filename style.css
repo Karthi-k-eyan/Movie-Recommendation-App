@@ -1,0 +1,171 @@
+/*style.css*/
+
+body {
+    background-color: #444444fe;
+    color: #f8f6f7;
+    margin: 0;
+    padding: 0;
+    font-family: 'Questrial', sans-serif;
+}
+
+#appTitle {
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+    font-family: 'Staatliches', sans-serif;
+    font-size: 6vw;
+}
+
+#genreForm, #playBtn {
+    text-align: center;
+    margin: 10px auto;
+    display: block;
+    font-family: 'Fredoka One', sans-serif;
+}
+#movieList {
+    width: 90%;
+    margin: 32px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movieItem {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+    position: relative;
+    overflow: hidden; /* Ensure that the hover effect does not overflow */
+}
+
+.movieItem img {
+    width: 100%;
+    height: auto;
+    transition: width 0.3s ease;
+}
+
+.movieItem:hover img {
+    cursor: pointer;
+    width: 70%;
+    height: auto;
+}
+
+/* Optional: Style text to visually indicate hover effect */
+.movieItem:hover h3,
+.movieItem:hover p {
+    color: #f00; /* Example effect: change text color */
+}
+
+#playBtn {
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #B97828;
+    color: #fdc238;
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+select {
+    width: 200px;
+    height: auto;
+    font-size: 18px;
+}
+
+#likeOrDislikeBtns {
+    text-align: center;
+    margin: 20px auto;
+}
+
+#likeBtn {
+    padding: 15px 25px;
+    font-size: 25px;
+    border-radius: 12px;
+    border-style: none;
+    cursor: pointer;
+    background-color: #249e57;
+    color: darkgreen;
+}
+
+/* Media Queries for responsiveness */
+@media (min-width: 768px) {
+    .movieItem {
+        width: 30%;
+    }
+}
+
+/* Existing CSS remains unchanged */
+
+#movieHeader {
+    display: flex;
+    align-items: center;
+    background-color: #248be6;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#detailPoster {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+#detailInfo {
+    flex: 1;
+}
+
+#movieCast {
+    padding: 20px;
+    background-color: #8190d9;
+    
+    margin-top: 20px;
+}
+
+#movieFacts{
+    padding: 20px;
+    background-color: #248be6;
+    
+    margin-top: 20px;
+}
+
+#movieReviews{
+    padding: 20px;
+    background-color: #fefefe;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+#castCarousel {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.castMember {
+    margin-right: 10px;
+}
+
+.castMember img {
+    width: 100px;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    #movieHeader {
+        flex-direction: row;
+    }
+
+    #detailPoster {
+        width: 300px;
+    }
+
+    #detailInfo {
+        padding-left: 20px;
+    }
+}

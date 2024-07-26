@@ -1,0 +1,135 @@
+/*styleDetailsPg.css*/
+
+body {
+    background-color: #454545;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  header {
+    background-color: #444;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  #movieDetailsContainer {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  #movieTopSection {
+    display: flex;
+    background-color: #a4a2a2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #moviePoster {
+    max-width: 200px;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+  
+  #movieInfo {
+    flex: 1;
+  }
+  
+  #movieTitle {
+    font-size: 2em;
+    margin: 0 0 10px;
+  }
+  
+  #movieOverview {
+    font-size: 1em;
+    margin: 0 0 20px;
+  }
+  
+  #movieBottomSection {
+    display: flex;
+    background-color: #a4a2a2;
+    border-radius: 8px;
+    color: rgb(8, 11, 11);
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  #castCarousel {
+    flex: 3;
+    overflow-x: auto;
+    padding: 10px;
+  }
+
+  #castList {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+  }
+  #castList::-webkit-scrollbar {
+    display: none;
+  }
+  .castItem {
+    margin-right: 10px;
+  }
+  
+  .castItem img {
+    max-width: 100px;
+    border-radius: 50%;
+  }
+  
+  /* New styles to position the heading above the carousel */
+  #castCarousel {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #castCarousel h3 {
+    margin-bottom: 10px; /* Add space between the heading and carousel */
+  }
+  
+  
+  #movieAdditionalInfo {
+    flex: 1;
+    background-color: #5f5e5e;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(138, 138, 138, 0.1);
+  }
+  
+  #movieReviews {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #7f7f7f;
+    color: #080808;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reviewItem {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .reviewItem:last-child {
+    border-bottom: none;
+  }
+  
+  @media (max-width: 768px) {
+    #movieTopSection {
+      flex-direction: column;
+    }
+  
+    #movieBottomSection {
+      flex-direction: column;
+    }
+  
+    #movieAdditionalInfo, #castCarousel {
+      margin-top: 20px;
+    }
+  }
+  
